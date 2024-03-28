@@ -112,7 +112,6 @@ export const me = async (request, response) => {
     const token = bearer.replace('Bearer ', '');
     const parser = jwt.verify(token, process.env.JWT_SECRET);
     const user = await User.findOne({ _id: new ObjectId(parser.id) });
-    console.log('user: ', user);
     return response.status(RESPONSE_STATUS.SUCCESS).json(user);
   } catch (error) {
     console.error(error.message);

@@ -20,7 +20,6 @@
     "importHelpers": true,
     "baseUrl": "src",
     "paths": {
-      "@/*": ["*"],
       "@config/*": ["config/*"],
       "@controllers/*": ["controllers/*"],
       "@constants/*": ["constants/*"],
@@ -32,9 +31,16 @@
       "@models/*": ["models/*"],
       "@routers/*": ["routers/*"],
       "@services/*": ["services/*"],
-      "@utils/*": ["utils/*"]
+      "@utils/*": ["utils/*"],
+      "@types/*": ["types/*"],
     }
   },
-  "include": ["src//*.ts", "src//*.json", ".env"],
-  "exclude": ["node_modules", "src/http", "src/logs", "src/tests"]
+  "tsc-alias": {
+    "verbose": true,
+    "resolveFullPaths": false
+  },
+  "include": [
+    "src/**/*",
+  ],
+  "exclude": ["node_modules"]
 }

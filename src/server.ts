@@ -5,6 +5,8 @@ import 'dotenv/config';
 import cors from 'cors';
 import userRouter from './routes/user';
 import bodyParser from 'body-parser';
+import fileRouter from 'routes/fileRoute';
+import audioRouter from 'routes/audio';
 
 const app = express();
 app.use(cors());
@@ -27,6 +29,9 @@ app.get('/', (req: Request, res: Response) => {
 });
 
 app.use('/api/user', userRouter);
+app.use('/api/file', fileRouter);
+app.use('/api/audio', audioRouter);
+app.use('/public', express.static('public'));
 
 app.listen(PORT, () => {
   console.log(`Application started on port ${PORT}!`);

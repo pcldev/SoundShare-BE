@@ -2,8 +2,8 @@
 
 ## Prerequisites
 
-- Installed (Git)[https://git-scm.com/download/]
-- Installed (NodeJS)[https://nodejs.org/en/download] on system environment
+- Installed [Git](https://git-scm.com/download/)
+- Installed [NodeJS](https://nodejs.org/en/download) on system environment
 
 ## Clone project
 

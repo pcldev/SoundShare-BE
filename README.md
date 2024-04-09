@@ -11,4 +11,6 @@
 
 ## STARTING THE DEVELOPMENT
 
+`cp .env.example .env`
+
 `cd SoundShare-BE & npm install & npm run start`

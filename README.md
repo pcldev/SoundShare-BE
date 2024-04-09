@@ -11,4 +11,4 @@
 
 ## STARTING THE DEVELOPMENT
 
-`npm install & npm run start`
+`cd SoundShare-BE & npm install & npm run start`
